@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
     <!-- swiper CSS CDN -->
     <link
       rel="stylesheet"
@@ -22,20 +23,20 @@
       crossorigin="anonymous"
     ></script>
     <!-- three.js CDN 추가  -->
-    <!-- <script type="importmap">
+    <script type="importmap">
       {
         "imports": {
-          "three": "https://unpkg.com/three@0.155.0/build/three.module.js",
-          "GLTFLoader": "https://unpkg.com/three@0.155.0/examples/jsm/loaders/GLTFLoader.js"
+          "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+          "GLTFLoader": "https://unpkg.com/three@0.141.0/examples/jsm/loaders/GLTFLoader.js"
         }
       }
-    </script> -->
+    </script>
+    <script type="module" defer src="../js/three.js"></script>
     <script defer src="../js/main.js"></script>
-    <!-- <script type="module" defer src="./js/three.js"></script> -->
   </head>
   <body>
     <header>
-      <div class="main-menu">
+      <div class="menu">
         <div class="inner">
           <div class="logo">
             <img
@@ -54,11 +55,11 @@
           </ul>
         </div>
       </div>
-      <!-- <canvas id="canvas" width="300" height="300"></canvas> -->
     </header>
-
     <main>
-      <section class="section1"></section>
+      <section class="section1">
+        <div class="threejs-container"></div>
+      </section>
       <section class="section2">
         <!-- 나이키 역사 슬라이드 -->
         <div class="swiper swiper1">
@@ -100,7 +101,7 @@
       <!-- 나이키 신발 슬라이드 -->
       <section class="section3">
         <article class="article1">
-          <h1>NOW IN FLIGHT</h1>
+          <p>NOW IN FLIGHT</p>
         </article>
         <article class="article2">
           <div class="swiper swiper2">
@@ -245,6 +246,62 @@
                   </a>
                 </div>
               </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section4">
+        <article class="article1">
+          <p>NOW IN FLIGHT</p>
+        </article>
+        <article class="article2">
+          <div class="item">
+            <div class="img">
+              <img src="../img/main/뉴스룸.png" alt="뉴스룸" />
+            </div>
+            <div class="title">
+              <p>July 27, 2023</p>
+              <p>JORDAN BRAND RETRO COLLECTION: FALL 2023</p>
+              <button>
+                <p>Learn More</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="title">
+              <p>July 27, 2023</p>
+              <p>JORDAN BRAND RETRO COLLECTION: FALL 2023</p>
+              <button>
+                <p>Learn More</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="img">
+              <img
+                src="../img/main/뉴스룸.png"
+                width="400px"
+                height="280px"
+                alt="뉴스룸"
+              />
+            </div>
+          </div>
+          <div class="item">
+            <div class="img">
+              <img
+                src="../img/main/뉴스룸.png"
+                width="400px"
+                height="280px"
+                alt="뉴스룸"
+              />
+            </div>
+            <div class="title">
+              <p>July 27, 2023</p>
+              <p>JORDAN BRAND RETRO COLLECTION: FALL 2023</p>
+              <button>
+                <p>Learn More</p>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </div>
         </article>

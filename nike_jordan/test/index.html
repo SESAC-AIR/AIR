@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="canvas" width="300"></canvas>
+    // CDN import
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@<version>/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@<version>/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module">
+      import { GLTFLoader } from "GLTFLoader";
+      import * as THREE from "three";
+
+      let scene = new THREE.Scene();
+      let renderer = new THREE.WebGLRenderer({
+        canvas: document.querySelector("#canvas"),
+      });
+
+      let camera = new THREE.PerspectiveCamera(30, 1);
+
+      let loader = new GLTFLoader();
+      loader.load("shoes/scene.gltf", function (gltf) {
+        scene.add(gltf.scene);
+        renderer.render(scene);
+      });
+    </script>
+  </body>
+</html>
