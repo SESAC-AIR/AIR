@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page scroll</title>
+    <style>
+        body {
+            height: 5000px;
+        }
+
+        .circle {
+            width: 3000px;
+            height: 3000px;
+            background-color: skyblue;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 5200px;
+            position: fixed;
+            top: calc(-3000px + 100vh);
+            left: 50%;
+            transform-origin: 0 50%;
+            transform: translateX(-50%);
+            font-size: 10rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle">circle
+
+
+    </div>
+    <script>
+        let circle = document.querySelector('.circle')
+        let lastScrollTop = 0;
+
+        // circle.addEventListener('click', (e) => {
+        //     count++
+        //     circle.style.transform = `rotate(${count}deg)`
+        // })
+        addEventListener('scroll', (e) => {
+            // https://stackoverflow.com/questions/31223341/detecting-scroll-direction
+            let st = window.pageYOffset || document.documentElement.scrollTop;
+            if (st > lastScrollTop) {
+                // downscroll
+                circle.innerText = 'down'
+            } else if (st < lastScrollTop) {
+                // upscroll
+                circle.innerText = 'up'
+            }
+            circle.style.transform = `rotate(${st * 0.1}deg) translateX(-50%)`
+            lastScrollTop = st <= 0 ? 0 : st;
+        }, false)
+    </script>
+</body>
+
+</html>
