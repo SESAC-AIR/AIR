@@ -5,7 +5,10 @@
   --main-ivory: #f7f4ec;
   --main-black: #000000;
 
+  --item-bg-white: #f9f9f9;
+
   /* text */
 
   /* padding & margin */
+  --item-margin: 0.5rem;
 }
