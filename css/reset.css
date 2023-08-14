@@ -1,17 +1,21 @@
+@import url("./root.css");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 body {
-    /* overflow: hidden; */
+  /* overflow: hidden; */
+  background-color: var(--main-ivory);
 }
