@@ -1,0 +1,36 @@
+@import url(./root.css);
+
+header {
+  position: absolute;
+  z-index: 2;
+  padding: 30px 30px;
+  width: 100%;
+}
+
+header > .menu > .inner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .menu > .inner > .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+header > .menu > .inner > .menu > li {
+  margin-right: 1.4rem;
+}
+header > .menu > .inner > .menu > li:last-child {
+  margin-right: 0;
+}
+
+header > .menu > .inner > .menu > li > a {
+  color: var(--main-black);
+}
+
+header > .menu > .inner > .menu > li > i {
+  color: var(--main-black);
+}
