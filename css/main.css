@@ -1,0 +1,148 @@
+@import url("./reset.css");
+
+body {
+    background-color: #f7f4ec;
+}
+
+header {
+    position: absolute;
+    z-index: 2;
+    padding: 30px 30px;
+    width: 100%;
+}
+
+header > .main-menu > .inner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .main-menu > .inner > .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+header > .main-menu > .inner > .menu > li {
+    margin-right: 30px;
+}
+
+header > .main-menu > .inner > .menu > li > a {
+    color: white;
+}
+
+header > .main-menu > .inner > .menu > li > i {
+    color: white;
+}
+
+/* main > .section1 > header > #canvas{
+    background-color: transparent;
+    position: absolute;
+    z-index: 999;
+} */
+
+section{
+    padding: 30px 30px;
+}
+
+main > .section1 {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/main/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 30px 30px;
+}
+
+main > .section2{}
+
+main > .section2 > .swiper1{
+    width: 100%;
+    height: 200px;
+}
+
+main > .section2 > .swiper1 > .swiper-wrapper > .swiper-slide{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main > .setcion2 > .swiper1 > .swiper-wrapper > .swiper-slide > a{
+    color: black;
+}
+
+main > .section3{
+    padding-top: 0px;
+    
+}
+
+main > .section3 > .article1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+main > .section3 > .article1 > h1{
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+main > .section3 > .article2 {}
+
+main > .section3 > .article2 > .swiper {
+    height: 250px;
+}
+
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item1{
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2 > .pn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2 > .pn > p{
+    margin-right: 10px;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2 > .pn > p:first-child{
+    text-decoration: underline;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2 > .pn > p:last-child{
+    font-weight: 800;
+    font-size: 20px;
+}
+
+main > .section3 > .article2 > .swiper > .swiper-wrapper > .swiper-slide > .item2 > a{
+    color: black;
+}
