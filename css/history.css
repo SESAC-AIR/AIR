@@ -4,8 +4,15 @@
   background-color: var(--main-ivory);
 }
 
+html,
 body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   width: 1920px;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 header {
