@@ -1,0 +1,333 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&display=swap");
+body {
+  background-color: #f7f4ec;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  padding: 30px 30px;
+  width: 100%;
+}
+
+header > .main-menu > .inner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header > .main-menu > .inner > .menu {
+  display: flex;
+  flex-direction: row;
+}
+
+header > .main-menu > .inner > .menu > li {
+  margin-right: 30px;
+}
+
+header > .main-menu > .inner > .menu > li > a {
+  color: black;
+}
+
+header > .main-menu > .inner > .menu > li > i {
+  color: black;
+}
+main {
+  position: relative;
+  top: 120px;
+}
+main > .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 5rem;
+  padding: 0 3rem 7rem;
+}
+
+/* grid-item */
+main .grid-container article {
+  width: 100%;
+  height: 100%;
+}
+/* wish-list logo */
+main .grid-container .wish-list {
+  font-family: "Abril Fatface", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10vw;
+  color: var(--main-red);
+}
+
+/* shoe-box */
+main .grid-container .shoe-box {
+}
+
+main .grid-container .shoe-box .img-box {
+  width: 100%;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  background-color: #f5f5f5;
+}
+main .grid-container .shoe-box .img-box > img {
+  width: 100%;
+}
+main .grid-container .shoe-box .img-box .heart-circle {
+  background-color: white;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .grid-container .shoe-box .img-box .heart-circle i {
+  color: var(--main-red);
+  font-size: 20px;
+}
+/* text box */
+main .grid-container .shoe-box .text-box {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1rem;
+  vertical-align: bottom;
+}
+
+main .grid-container .shoe-box .text-box .text-box--left {
+  display: flex;
+  flex-direction: column;
+}
+
+main .grid-container .shoe-box .text-box .text-box--right {
+  display: flex;
+  flex-direction: row;
+}
+
+main .grid-container .shoe-box .text-box .shoe-tit {
+  font-size: 18px;
+  font-weight: bold;
+}
+main .grid-container .shoe-box .text-box .type {
+  font-size: 14px;
+  color: #898484;
+  margin-top: 0.5rem;
+}
+main .grid-container .shoe-box .text-box .original-price {
+  text-decoration: line-through;
+  color: #898484;
+  font-size: 14px;
+  margin: 3px 0.5rem;
+}
+main .grid-container .shoe-box .text-box .sale-price {
+}
+
+/* hover */
+main .grid-container .shoe-box .img-box:hover {
+  cursor: pointer;
+}
+main .grid-container .shoe-box .img-box .hover-wrap {
+  display: none;
+}
+main .grid-container .shoe-box .img-box .hover-wrap.show {
+  display: block;
+}
+main .grid-container .shoe-box .img-box .hover-wrap .hover-filter {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.6;
+}
+main .grid-container .shoe-box .img-box .hover-wrap .btns-wrap {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .grid-container .shoe-box .img-box .hover-wrap .btns-wrap .btn {
+  border: 1px solid #000;
+  margin: 1.5rem;
+  width: 130px;
+  background-color: #f1f2ec;
+  border-radius: 13px;
+  text-align: right;
+  padding-right: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main .grid-container .shoe-box .img-box .hover-wrap .btns-wrap .btn.goto-kream {
+  color: #000;
+}
+main
+  .grid-container
+  .shoe-box
+  .img-box
+  .hover-wrap
+  .btns-wrap
+  .btn.goto-kream:active {
+  color: var(--main-red);
+}
+main
+  .grid-container
+  .shoe-box
+  .img-box
+  .hover-wrap
+  .btns-wrap
+  .btn.goto-kream
+  img {
+  width: 90%;
+  /* border: 1px solid red; */
+}
+main .grid-container .shoe-box .img-box .hover-wrap .btns-wrap .btn.show-modal {
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bold;
+}
+main
+  .grid-container
+  .shoe-box
+  .img-box
+  .hover-wrap
+  .btns-wrap
+  .btn.show-modal
+  i {
+  margin-left: 0.6rem;
+}
+
+/* modal */
+/* modal-left */
+main .modal-details {
+  background-color: #fff;
+  width: 600px;
+  height: 450px;
+  /* height: 400px; */
+  display: flex;
+  position: fixed;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px #a4a4a46e;
+  /* transform: translate(-50%, -50%); */
+  z-index: 50;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main .modal-details .modal-left {
+  padding: 1rem;
+  width: 50%;
+  border-right: 1px solid #a4a4a4;
+}
+main .modal-details .modal-left .nike {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 1rem;
+  font-family: "Audiowide", sans-serif;
+  text-shadow: 2px 0px 1px #777;
+}
+main .modal-details .modal-left .swiper {
+  width: 100%;
+  border: 1px solid #cdcdcd;
+  background-color: #f5f5f5;
+}
+main .modal-details .modal-left .swiper img {
+  width: 100%;
+}
+main .modal-details .modal-left .goto-kream {
+  float: right;
+  display: block;
+  border: 1px solid black;
+  background-color: #f1f2ec;
+  border-radius: 6px;
+  text-align: right;
+  padding: 0.3rem 0;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  width: 80px;
+  margin: 1rem 0;
+}
+main .modal-details .modal-left .goto-kream img {
+  width: 60px;
+}
+main .modal-details .modal-left .goto-kream i {
+  color: black;
+}
+/* modal-right */
+main .modal-right {
+  width: 50%;
+  padding: 2.5rem 1rem;
+}
+main .modal-right .jordan {
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: "Audiowide", cursive;
+}
+main .modal-right .product-name {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+main .modal-right .product-name .product-en {
+  font-size: 16px;
+}
+main .modal-right .product-name .product-ko {
+  font-size: 14px;
+  color: #868686;
+}
+main .modal-right .price {
+  font-family: "Audiowide", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+main .modal-right .info-box {
+  margin-top: 2rem;
+}
+
+main .modal-right .info-box .info {
+  font-family: "Audiowide", sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+main .modal-right .info-box .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .modal-right .info-box .row span {
+  font-size: 12px;
+  display: block;
+  width: 40%;
+  /* border: 1px solid black; */
+  text-align: center;
+  margin: 0.2rem 0;
+}
+
+/* x */
+.fa-x {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 20px;
+  cursor: pointer;
+}
