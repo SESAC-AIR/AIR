@@ -40,8 +40,6 @@ header > .main-menu > .inner > .menu > li > i {
   color: var(--main-black);
 }
 
-header > .main-menu > .inner > .menu > li#wishlist {
-}
 header > .main-menu > .inner > .menu > li#wishlist a {
   display: block;
   padding: 0.5em 0.7em;
@@ -50,7 +48,7 @@ header > .main-menu > .inner > .menu > li#wishlist a {
   border: 1px solid var(--main-black);
 }
 header > .main-menu > .inner > .menu > li#wishlist a span {
-  margin-right: 10px;
+  margin-right: 3px;
 }
 header > .main-menu > .inner > .menu > li#wishlist a i {
   color: var(--main-red);
