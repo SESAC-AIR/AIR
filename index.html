@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AIR</title>
+  <!-- fontawesome CDN 추가  -->
+  <script src="https://kit.fontawesome.com/837ff3adc1.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/index.css">
   <script defer src="./js/index.js"></script>
@@ -13,10 +15,13 @@
 <body>
   <canvas id="canvas"></canvas>
   <div id="sendName">
-    <input type="text" placeholder="닉네임을 입력해주세요" />
-    <button type="submit" onclick="location.href='./html/main.html'">Send</button>
+    <h1>이제 당신이 날아오를 차례!</h1>
+    <div>
+      <input type="text" placeholder="닉네임을 알려주세요 :)" />
+      <button type="submit">들어가기</button>
+    </div>
   </div>
-
+  <button id="skip" onclick="location.href='./html/main.html'">건너뛰기<i class="fa-solid fa-angles-right"></i></button>
 </body>
 
 </html>

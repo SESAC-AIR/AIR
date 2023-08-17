@@ -1,45 +1,81 @@
+@import url(./root.css);
+
 body {
   overflow: hidden;
 }
 
 #sendName {
-  width: 380px;
-  height: 180px;
+  width: 400px;
+  height: 160px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+
   z-index: 100;
 }
-#sendName input {
-  width: 100%;
-  height: 100px;
+#sendName h1 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.8vw;
+  margin-bottom: 1rem;
+}
+#sendName div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#sendName div input {
+  width: 270px;
+  height: 100%;
   outline: none;
-  border: 2px solid black;
+  border: none;
   border-radius: 15px;
   background-color: #f7f4ec;
   padding: 1rem 2rem;
-  font-size: 1.8rem;
-  text-align: center;
+  font-size: 1.3rem;
+  box-shadow: 0 0 5px #33333344;
 }
-#sendName input::placeholder {
+#sendName div input::placeholder {
   color: #bbb;
 }
-#sendName button {
+#sendName div button {
   border: none;
   outline: none;
   width: 120px;
-  height: 60px;
+  height: 100%;
   border-radius: 15px;
-  background-color: black;
+  background-color: var(--main-white);
+  border: 1px solid var(--main-black);
+  color: var(--main-black);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+#sendName div button:hover {
+  background-color: #111;
+  color: #f7f4ec;
+}
+
+#skip {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  padding: 0.7em 1em;
+  font-size: 0.8rem;
+  border-radius: 50px;
+  background-color: var(--main-black);
   color: white;
   cursor: pointer;
 }
-#sendName button:hover {
-  background-color: #111;
-  color: #f7f4ec;
+
+#skip:hover {
+  background-color: #222;
+}
+
+#skip i {
+  margin-left: 5px;
 }
