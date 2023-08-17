@@ -9,6 +9,13 @@
 a {
   text-decoration: none;
 }
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  color: var(--main-black);
+}
 
 ul,
 ol {
