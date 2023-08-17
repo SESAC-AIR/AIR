@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/collections.css">
+    <script defer src="../js/collections.js"></script>
     <!-- fontawesome CDN 추가  -->
     <script src="https://kit.fontawesome.com/837ff3adc1.js" crossorigin="anonymous"></script>
 </head>
@@ -44,10 +45,13 @@
                 <li><a href="#">7</a></li>
                 <li><a href="#">8</a></li>
                 <li><a href="#">9</a></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#">11</a></li>
                 <li><a href="#"><img src="../img/collections/arrow_right.png" alt="다음"></a></li>
             </ul>
         </section>
         <section class="colContainer">
+            <h2>AIR JORDAN 1</h2>
             <article class="colVisual">
                 <div class="imgArea">
                     <div class="imgWrap"></div>
@@ -88,9 +92,325 @@
                     </dl>
                 </div>
             </article>
-            <article class="colProducts">
+            <section class="colProducts">
+                <div class="shoeToggle">
+                    <button id="lowBtn" class="checked"><i class="fa-regular fa-square-check"></i>LOW</button>
+                    <button id="highBtn" class="checked"><i class="fa-regular fa-square-check"></i>HIGH</button>
+                </div>
+                <div class="grid-container">
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box high">
+                        <div class="img-box">
+                            <img src="../img/collections/에어-조던-1-하이.jpg" alt="에어 조던 1 하이" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 하이</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box high">
+                        <div class="img-box">
+                            <img src="../img/collections/에어-조던-1-하이.jpg" alt="에어 조던 1 하이" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 하이</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-solid fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box high">
+                        <div class="img-box">
+                            <img src="../img/collections/에어-조던-1-하이.jpg" alt="에어 조던 1 하이" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 하이</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
 
-            </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-solid fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="shoe-box low">
+                        <div class="img-box">
+                            <img src="../img/wishlist/에어 조던 1 로우.jpeg" alt="에어 조던 1 로우" />
+                            <div class="heart-circle"><i class="fa-regular fa-heart"></i></div>
+                            <div class="hover-wrap">
+                                <div class="hover-filter"></div>
+                                <div class="btns-wrap">
+                                    <a target="_blank"
+                                        href="https://kream.co.kr/search?keyword=%EC%97%90%EC%96%B4%20%EC%A1%B0%EB%8D%98%201%20%EB%A1%9C%EC%9A%B0"
+                                        class="btn goto-kream">
+                                        <img src="../img/wishlist/kream-logo.png" alt="kream logo" />
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </a>
+                                    <div class="btn show-modal">
+                                        <span>상세페이지</span>
+                                        <i class="fa-solid fa-caret-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="text-box--left">
+                                <div class="shoe-tit">에어 조던 1 로우</div>
+                                <div class="type">남성신발</div>
+                            </div>
+                            <div class="text-box--right">
+                                <div class="original-price">할인전 가격</div>
+                                <div class="sale-price">할인 가격</div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
         </section>
     </main>
 </body>
