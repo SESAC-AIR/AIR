@@ -75,7 +75,7 @@ inputSearch.addEventListener("focusout", function () {
 
 const menu = document.querySelector(".menu");
 const menuIcon = menu.querySelectorAll("li");
-const menuSearch = menuIcon[4];
+const menuSearch = menuIcon[3];
 // console.log(menuSearch);
 
 menuSearch.addEventListener("click", () => {
@@ -91,14 +91,12 @@ const shoes = document.querySelector(".threejs-container");
 shoes.style.transition = "1s";
 
 document.addEventListener("scroll", () => {
-
-  console.log(scrollY);
-if (scrollY >= 0 && scrollY < 1490) {
-shoes.classList.add("threejs-container");
-shoes.style.opacity = 1;
-}else if(scrollY >= 1490){
-shoes.style.opacity = 0;
-shoes.classList.remove("threejs-container");
+    if (scrollY >= 0 && scrollY < 1490) {
+        shoes.classList.add("threejs-container");
+        shoes.style.opacity = 1;
+    }else if(scrollY >= 1490){
+        shoes.style.opacity = 0;
+        shoes.classList.remove("threejs-container");
 }
 
 });

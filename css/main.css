@@ -25,359 +25,292 @@ main > .section1 > .section1-title > h1{
     -webkit-text-stroke: 1px var(--main-red);
 }
 
-/* 운동화 애니메이션 */
-main > .section1 > .threejs-container {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 200px;
+main > .section1 > .img1{
+    position: absolute;
+    left: -8%;
+    top: 0%;
+    transform: rotate(-10deg);
 }
 
+main > .section1 > .img2{
+    position: absolute;
+    right: -5%;
+    top: 0%;
+    transform: rotate(-10deg);
+    /* z-index: 2; */
+}
+
+main > .section1 > .content > p:first-child{
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-family: 'Alfa Slab One', cursive;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--main-black);
+    letter-spacing: 0.8px;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Lato', sans-serif; */
+}
+
+main > .section1 > .content > p:last-child{
+    font-size: 30px;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #444;
+}
+
+main > .section1 > .content1{
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    height: 20%;
+}
+
+main > .section1 > .content2{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    height: 20%;
+}
+
+main > .section1 > .content3{
+    position: absolute;
+    right: 5%;
+    bottom: 0%;
+    height: 20%;
+}
+
+
+/* 운동화 애니메이션 */
+main > .section1 > .threejs-container{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 200px;
+}
+
+
 main > .section2 {
-  margin: 3rem 0px;
+    margin: 3rem 0px;
 }
 
 main > .section2 > .article1 {
-  width: 100%;
-  /* margin: 0 3rem; */
+    width: 100%;
+    /* margin: 0 3rem; */
 }
 
 main > .section2 > .article1 > .swiper1 {
-  width: 100%;
+    width: 100%;
 }
 
-main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide {
-  position: relative;
+
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide{
+    position: relative;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .swiper-slide
-  > img:first-child {
-  width: 100%;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide > img:first-child{
+    width: 100%;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .swiper-slide
-  > img:nth-child(2) {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  width: 30px;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide > img:nth-child(2){
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 30px;
 }
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .swiper-slide
-  > p:nth-child(3) {
-  position: absolute;
-  color: white;
-  font-size: 20px;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide > p:nth-child(3){
+    position: absolute;
+    color: white;
+    font-size: 20px;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .swiper-slide
-  > p:nth-child(4),
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .swiper-slide
-  > p:nth-child(5) {
-  font-family: "Alfa Slab One", cursive;
-  position: absolute;
-  color: white;
-  font-size: 45px;
-  line-height: 1;
-  color: white;
-  -webkit-text-stroke: 1px var(--main-red);
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide > p:nth-child(4), 
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .swiper-slide > p:nth-child(5){
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    line-height: 1;
+    color: white;
+    -webkit-text-stroke: 1px var(--main-red);
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide1
-  > p:nth-child(3) {
-  bottom: 21%;
-  left: 3%;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide1 > p:nth-child(3){
+    bottom: 21%;
+    left: 3%;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide1
-  > p:nth-child(4) {
-  bottom: 4%;
-  left: 3%;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide1 > p:nth-child(4){
+    bottom: 4%;
+    left: 3%;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide2
-  > p:nth-child(3) {
-  top: 20%;
-  left: 10%;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide2 > p:nth-child(3){
+    top: 20%;
+    left: 10%;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide2
-  > p:nth-child(4) {
-  top: 25%;
-  left: 10%;
-  text-align: center;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide2 > p:nth-child(4){
+    top: 25%;
+    left: 10%;
+    text-align: center;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide3
-  > p:nth-child(3) {
-  font-family: "Alfa Slab One", cursive;
-  position: absolute;
-  color: white;
-  font-size: 45px;
-  line-height: 1;
-  color: white;
-  -webkit-text-stroke: 1px var(--main-red);
-  top: 15%;
-  left: 5%;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide3 > p:nth-child(3){
+    font-family: 'Alfa Slab One', cursive;
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    line-height: 1;
+    color: white;
+    -webkit-text-stroke: 1px var(--main-red);
+    top: 15%;
+    left: 5%;
 }
 
-main
-  > .section2
-  > .article1
-  > .swiper1
-  > .swiper-wrapper
-  > .slide3
-  > p:nth-child(4) {
-  top: 5%;
-  left: 95%;
-  font-size: 38px;
-  transform-origin: 0 0;
-  transform: rotate(90deg);
-  width: 100%;
-  position: absolute;
+main > .section2 > .article1 > .swiper1 > .swiper-wrapper > .slide3 > p:nth-child(4){
+    top: 5%;
+    left: 95%;
+    font-size: 38px;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+    width: 100%;
+    position: absolute;
 }
 
-main > .section2 > .article2 {
-  margin: 3rem 0;
+
+main > .section2 > .article2{
+    margin: 3rem 0;
 }
 
-main > .section2 > .article2 > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  height: 3rem;
-  margin: 20px 0px;
-  color: var(--main-black);
-  /* background-color: gray; */
-  font-weight: 800;
+main > .section2 > .article2 > p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 3rem;
+    margin: 20px 0px;
+    color: var(--main-black);
+    /* background-color: gray; */
+    font-weight: 800;
 }
 
 main > .section2 > .article2 > .swiper2 {
-  height: 250px;
+    height: 250px;
 }
 
-main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide {
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide{}
+
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item1{}
+
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item1 > img{
+    width: 100%;
 }
 
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item1 {
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
 }
 
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item1
-  > img {
-  width: 100%;
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > .pn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+} 
+
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > .pn > p{
+    margin-right: 10px;
+    color: var(--main-black);
 }
 
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2 {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  padding: 0px 10px;
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > .pn > p:first-child{
+    text-decoration: underline;
+} 
+
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > .pn > p:last-child{
+    font-weight: 600;
+    font-size: 20px;
 }
 
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2
-  > .pn {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2
-  > .pn
-  > p {
-  margin-right: 10px;
-  color: var(--main-black);
-}
-
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2
-  > .pn
-  > p:first-child {
-  text-decoration: underline;
-}
-
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2
-  > .pn
-  > p:last-child {
-  font-weight: 600;
-  font-size: 20px;
-}
-
-main
-  > .section2
-  > .article2
-  > .swiper2
-  > .swiper-wrapper
-  > .swiper-slide
-  > .item2
-  > a {
-  color: var(--main-black);
+main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > a{
+    color: var(--main-black);
 }
 
 main > .section2 > .article3 {
-  width: 100%;
-  margin: 3rem 0;
+    width: 100%;
+    margin: 3rem 0;
 }
 
 main > .section2 > .article3 > p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-  height: 3rem;
-  margin: 20px 0px;
-  color: var(--main-black);
-  /* background-color: gray; */
-  font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    height: 3rem;
+    margin: 20px 0px;
+    color: var(--main-black);
+    /* background-color: gray; */
+    font-weight: 800;
 }
 
-main > .section2 > .article3 > .newsroom > .item {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  /* justify-content: center; */
-  padding-bottom: 3rem;
-  width: 100%;
-  margin: 0 auto;
+main > .section2 > .article3 > .newsroom > .item{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* justify-content: center; */
+    padding-bottom: 3rem;
+    width: 100%;
+    margin: 0 auto;
 }
 
-main > .section2 > .article3 > .newsroom > .item:nth-child(2) {
-  justify-content: space-between;
+main > .section2 > .article3 > .newsroom > .item:nth-child(2){
+    justify-content: space-between;
 }
 
-main > .section2 > .article3 > .newsroom > .item > .img {
-  background-color: yellow;
-  width: 55%;
+
+main > .section2 > .article3 > .newsroom > .item > .img{
+    background-color: yellow;
+    width: 55%;
 }
-main > .section2 > .article3 > .newsroom > .item > .img > img {
-  width: 100%;
+main > .section2 > .article3 > .newsroom > .item > .img > img{
+    width: 100%;
 }
 main > .section2 > .article3 > .newsroom > .item > .newroom-title {
-  padding-left: 30px;
+    padding-left: 30px;
 }
 
-main > .section2 > .article3 > .newsroom > .item > .newroom-title > * {
-  margin-bottom: 10px;
+main > .section2 > .article3 > .newsroom > .item > .newroom-title > *{
+    margin-bottom: 10px;
 }
 
-main > .section2 > .article3 > .newsroom > .item > .newroom-title > p {
-  color: black;
+main > .section2 > .article3 > .newsroom > .item > .newroom-title > p{
+    color: black;
 }
 
-main
-  > .section2
-  > .article3
-  > .newsroom
-  > .item
-  > .newroom-title
-  > p:nth-child(2) {
-  font-weight: 800;
-  font-size: 28px;
-  width: 90%;
+
+main > .section2 > .article3 > .newsroom > .item > .newroom-title > p:nth-child(2){
+    font-weight: 800;
+    font-size: 28px;
+    width: 90%;
 }
 
-main > .section2 > .article3 > .newsroom > .item > .newroom-title > button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px;
+main > .section2 > .article3 > .newsroom > .item > .newroom-title > button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
 }
 
-main > .section2 > .article3 > .newsroom > .item > .newroom-title > button > p {
-  margin-right: 5px;
+main > .section2 > .article3 > .newsroom > .item > .newroom-title > button > p{
+    margin-right: 5px;
 }

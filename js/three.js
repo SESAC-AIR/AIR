@@ -169,10 +169,6 @@ modelAni.to(camera.position,{
   }
 })
 
-
-
-
-
 // 애니메이션 함수
 function animate(currentTime){
   requestAnimationFrame(animate)
@@ -180,5 +176,3 @@ function animate(currentTime){
 }
 
 animate()
-
-
