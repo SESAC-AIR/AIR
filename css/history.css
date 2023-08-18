@@ -1,6 +1,9 @@
 @import url("./root.css");
 @import url("./reset.css");
 
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
 header {
   overflow-x: hidden;
   width: 100%;
@@ -103,31 +106,107 @@ header > .flow > div > * {
   border: 2px solid var(--main-red);
 }
 
+.circle1 {
+  background-color: var(--main-red);
+}
+
 main {
   margin-left: 250px;
   margin-right: 250px;
 }
 
+.container {
+  position: relative;
+}
+
 .line2 {
   width: 2px;
-  height: 1000px;
+  height: 10500px;
   background-color: black;
   margin-left: 250px;
   /* display: flex; */
   position: absolute;
-  z-index: 100;
+  z-index: -1;
 }
 
-section1,
-section2 {
+.collaboration {
+  margin-top: 10%;
+  margin-left: 70%;
+}
+
+.collaboration-name {
+  font-size: 30px;
+}
+
+.collaboration-history {
+  font-size: 80px;
+}
+
+.section {
   display: flex;
-  margin-top: 30px;
+  margin-top: 100px;
+  z-index: 1;
 }
 
-main > section1 > img,
-main > section2 > img {
-  width: 400px;
-  border-radius: 20px;
+.container-slider {
+  width: 640px;
+  margin: 0 auto;
+}
+
+.album {
+  height: 400px;
+  width: 640px;
+  overflow: hidden;
+}
+
+.images {
+  position: relative;
+  display: flex;
+  height: 400px;
+}
+
+.images > img {
+  width: 640px;
+  height: 400px;
+}
+
+button,
+button:active,
+button:focus {
+  /* width: 100px;
+  height: 30px;
+  border: none;
+  color: white;
+  background-color: teal;
+  outline: none; */
+}
+
+button:hover {
+  /* background-color: turquoise; */
+}
+
+button:disabled {
+  /* background-color: gray; */
+}
+
+.prev {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+section2 > img,
+section3 > img,
+section4 > img,
+section5 > img,
+section6 > img,
+section7 > img,
+section8 > img,
+section9 > img,
+section10 > img {
+  width: 300px;
 }
 
 section2 {
@@ -155,61 +234,65 @@ section2 {
 }
 
 .year {
-  flex-grow: 0;
+  /* flex-grow: 0;
   flex-shrink: 0;
   font-size: 55px;
   font-weight: 700;
   text-align: left;
   color: var(--main-red);
-  -webkit-text-stroke: 1px #000; /* 텍스트 테두리 두께와 색상 */
+  -webkit-text-stroke: 1px #000; 텍스트 테두리 두께와 색상 */
 }
 
 .series {
-  flex-grow: 0;
+  display: flex;
+  /* flex-direction: row; */
+
+  /* flex-grow: 0;
   flex-shrink: 0;
   font-size: 20px;
   text-align: left;
-  display: flex;
+  display: flex; */
 }
 
 .series-title {
-  flex-grow: 0;
+  /* flex-grow: 0;
   flex-shrink: 0;
   font-size: 20px;
   text-align: left;
-  color: #000;
+  color: #000; */
 }
 .series-number {
-  flex-grow: 0;
+  margin-left: 5px;
+  /* flex-grow: 0;
   flex-shrink: 0;
   font-size: 20px;
   font-weight: 700;
   text-align: left;
-  color: #aa010a;
+  color: #aa010a; */
 }
 .subtitle {
-  flex-grow: 0;
+  /* flex-grow: 0;
   flex-shrink: 0;
   width: 700px;
   font-size: 20px;
   font-weight: 500;
   text-align: left;
-  color: #000;
+  color: #000; */
 }
 .title {
-  flex-grow: 0;
+  /* flex-grow: 0;
   flex-shrink: 0;
   font-size: 30px;
   font-weight: 700;
   text-align: left;
-  color: #000;
+  color: #000; */
 }
 .the-body {
-  flex-grow: 0;
+  /* flex-grow: 0;
   flex-shrink: 0;
   width: 700px;
   font-size: 20px;
   font-weight: 500;
   text-align: left;
-  color: #000;
+  color: #000; */
 }
