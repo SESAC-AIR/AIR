@@ -80,11 +80,11 @@ const shoes = document.querySelector('.threejs-container');
 shoes.style.transition = '1s';
 
 document.addEventListener("scroll", () => {
-//   console.log(scrollY);
-if (scrollY >= 0 && scrollY < 1700) {
+  console.log(scrollY);
+if (scrollY >= 0 && scrollY < 1490) {
 shoes.classList.add("threejs-container");
 shoes.style.opacity = 1;
-}else if(scrollY >= 1700){
+}else if(scrollY >= 1490){
 shoes.style.opacity = 0;
 shoes.classList.remove("threejs-container");
 }

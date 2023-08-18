@@ -83,7 +83,7 @@ modelAni.to(GLTFObjGroup.rotation,{
 modelAni.to(camera.position,{
   x: 0,
   y: -0.6,
-  z: 3, 
+  z: 0.1, 
   scrollTrigger: {
     trigger: ".section1",
     start: "top bottom",
@@ -112,9 +112,9 @@ modelAni.to(camera.position,{
   y: -0.6,
   z: 3, 
   scrollTrigger: {
-    trigger: ".section1",
-    start: "top bottom",
-    end: "top bottom",
+    trigger: "header",
+    start: "top top",
+    end: "bottom top",
     // markers: true,
   }
 })
