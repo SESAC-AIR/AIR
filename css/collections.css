@@ -1,7 +1,7 @@
 @import url("./root.css");
 
-main.inner {
-  margin-top: 115px;
+main {
+  margin-top: 50px;
 }
 main h2.mainTitle {
   text-align: center;
@@ -11,11 +11,11 @@ main h2.mainTitle {
 /* collection INDICATOR */
 main #colIndicator {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  padding: 0 1em;
-  margin: 50px 30px 20px;
+  margin: 30px;
 }
-main #colIndicator span {
+main #colIndicator > span {
   position: relative;
   font-weight: bold;
   font-size: 2vw;
@@ -23,15 +23,22 @@ main #colIndicator span {
   border-right: 1px solid #ddd;
 }
 
-main #colIndicator ul {
-  padding-left: 0.6rem;
+main #colIndicator {
   display: flex;
+}
+
+main #colIndicator ul {
+  display: flex;
+  flex-grow: 2;
   justify-content: space-between;
   align-items: center;
+  margin: 0 3rem 0 1.6rem;
+}
+main #colIndicator ul.colIndiList20 {
+  display: none;
 }
 main #colIndicator ul li {
-  padding: 0 1em;
-  margin-right: 0.75rem;
+  text-align: center;
   position: relative;
 }
 main #colIndicator ul li:last-child {
@@ -46,10 +53,20 @@ main #colIndicator ul li:first-child a {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+main #colIndicator > button {
+  border: 1px solid var(--main-black);
+  padding: 0.5em 1em;
+  border-radius: var(--item-radius);
+  font-size: 1.6vw;
+  margin-right: 5rem;
+}
+main #colIndicator > button > img {
+  margin-left: 10px;
+}
 
 /* COLLECTION */
 main .colContainer {
-  margin: 3rem;
+  margin: 30px;
 }
 main .colContainer h2 {
   font-size: 1.8vw;
@@ -82,7 +99,7 @@ main .colContainer .colVisual .imgArea .imgWrap:nth-child(1) {
   height: 20vh;
   background-image: url("../img/collections/aj00.jpeg");
 }
-main .colContainer .colVisual .imgArea .imgWrap:nth-child(2) {
+main .colContainer .colVisual .imgArea .imgWrap.slider {
   flex-grow: 3;
   height: 40vh;
   background-image: url("../img/collections/aj1.webp");
@@ -180,7 +197,7 @@ main .colProducts .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  column-gap: 2rem;
+  column-gap: 1rem;
   row-gap: 5rem;
   padding-bottom: 7rem;
 }
@@ -237,7 +254,7 @@ main .colProducts .grid-container .shoe-box .text-box .text-box--right {
 }
 
 main .colProducts .grid-container .shoe-box .text-box .shoe-tit {
-  font-size: 1.5vw;
+  font-size: 1.4vw;
   font-weight: bold;
 }
 main .colProducts .grid-container .shoe-box .text-box .type {
@@ -248,10 +265,11 @@ main .colProducts .grid-container .shoe-box .text-box .type {
 main .grid-container .shoe-box .text-box .original-price {
   text-decoration: line-through;
   color: #898484;
-  font-size: 1.2vw;
+  font-size: 10px;
   margin: 3px 0.5rem;
 }
 main .colProducts .grid-container .shoe-box .text-box .sale-price {
+  font-size: 1.3vw;
 }
 
 /* hover */
@@ -356,4 +374,107 @@ main
   .btn.show-modal
   i {
   margin-left: 0.6rem;
+}
+
+/* 576 768 992 */
+@media (max-width: 992px) {
+  main .colProducts .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .colContainer .colVisual .imgArea {
+    width: 100%;
+  }
+
+  main .colProducts .grid-container .shoe-box .text-box .shoe-tit,
+  main .colProducts .grid-container .shoe-box .text-box .sale-price {
+    font-size: 1.8vw;
+  }
+  main .colProducts .grid-container .shoe-box .text-box .type,
+  main .colProducts .grid-container .shoe-box .text-box .original-price {
+    font-size: 1.6vw;
+  }
+}
+@media (max-width: 768px) {
+  main h2.mainTitle {
+    font-size: 32px;
+  }
+  main .colProducts .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  main #colIndicator > span {
+    padding-right: 12px;
+  }
+  main #colIndicator ul {
+    margin: 0 12px;
+  }
+  main #colIndicator ul li {
+    width: 30px;
+  }
+
+  main #colIndicator > span,
+  main #colIndicator ul li a {
+    font-size: 16px;
+  }
+  main #colIndicator > button {
+    margin-right: 0;
+    min-width: 80px;
+  }
+  main #colIndicator > button span {
+    font-size: 14px;
+  }
+  main #colIndicator > button span img {
+    display: inline-block;
+  }
+  main .colContainer h2 {
+    font-size: 16px;
+  }
+  main .colContainer .colVisual .imgArea .imgWrap {
+    display: none;
+  }
+  main .colContainer .colVisual .imgArea .imgWrap.slider {
+    display: block;
+    height: 50vh;
+    margin: 0;
+  }
+  main .colContainer .colVisual .imgArea > span {
+    display: none;
+  }
+  main .colContainer .colVisual .infoArea {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1.6rem 0;
+  }
+  main .colContainer .colVisual .infoArea .slogan {
+    margin-bottom: 1rem;
+  }
+  main .colContainer .colVisual .infoArea .slogan p {
+    font-size: 6.2vw;
+  }
+  main .colContainer .colVisual .infoArea .slogan p:last-child {
+    font-size: 6vw;
+  }
+  main .colContainer .colVisual .infoArea .infoBox {
+    width: 100%;
+  }
+  main .colContainer .colVisual .infoArea .infoBox .infoLine dt,
+  main .colContainer .colVisual .infoArea .infoBox .infoLine dd {
+    font-size: 12px;
+  }
+  main .colProducts .grid-container .shoe-box .text-box .shoe-tit,
+  main .colProducts .grid-container .shoe-box .text-box .sale-price {
+    font-size: 16px;
+  }
+  main .colProducts .grid-container .shoe-box .text-box .type,
+  main .colProducts .grid-container .shoe-box .text-box .original-price {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  main .colProducts .grid-container {
+    grid-template-columns: 1fr;
+  }
+  main #colIndicator {
+    width: 100%;
+  }
 }
