@@ -1,38 +1,50 @@
-@import url(./root.css);
-
 header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  padding: 30px 30px;
+  overflow-x: hidden;
   width: 100%;
 }
 
-header > .menu > .inner {
-  position: relative;
+header > .main-menu {
+  height: 100px;
+}
+
+header > .main-menu > .inner {
+  padding: 30px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 
-header > .menu > .inner > .menu {
+header > .main-menu > .inner > .menu {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
-header > .menu > .inner > .menu > li {
-  margin-right: 1.4rem;
-}
-header > .menu > .inner > .menu > li:last-child {
-  margin-right: 0;
+header > .main-menu > .inner > .menu > li {
+  margin-right: 30px;
 }
 
-header > .menu > .inner > .menu > li > a {
+header > .main-menu > .inner > .menu > li > a {
   color: var(--main-black);
 }
 
-header > .menu > .inner > .menu > li > i {
+header > .main-menu > .inner > .menu > li > i {
   color: var(--main-black);
+}
+
+header > .main-menu > .inner > .menu > li#wishlist a {
+  display: block;
+  padding: 0.25em 0.7em;
+  background-color: #fff;
+  border-radius: var(--item-radius);
+  border: 1px solid var(--main-black);
+}
+header > .main-menu > .inner > .menu > li#wishlist a span {
+  margin-right: 3px;
+  font-size: 14px;
+}
+header > .main-menu > .inner > .menu > li#wishlist a i {
+  color: var(--main-red);
+  font-size: 14px;
 }
