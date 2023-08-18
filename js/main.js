@@ -1,16 +1,3 @@
-// 닉네임 받아오기
-const storedName = localStorage.getItem("name");
-const nameArea = document.querySelector("#wishlist a span");
-const span = document.createElement("span");
-let userName = storedName;
-if (storedName.length > 4) {
-  userName = storedName.slice(0, 4) + "...";
-}
-span.append(userName);
-span.style.fontWeight = "bold";
-span.style.marginRight = "0";
-nameArea.prepend(span, "님의 ");
-
 const swiper1 = new Swiper(".swiper1", {
   // centeredSlides: false,
   loop: true,
@@ -98,7 +85,6 @@ document.addEventListener("scroll", () => {
         shoes.style.opacity = 0;
         shoes.classList.remove("threejs-container");
 }
-
 });
 
 // section1 애니메이션
