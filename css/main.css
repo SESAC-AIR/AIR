@@ -208,14 +208,13 @@ main > .section2 > .article2{
 
 main > .section2 > .article2 > p{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    font-size: 25px;
+    font-size: 30px;
     height: 3rem;
-    margin: 20px 0px;
+    margin: 20px 20px;
     color: var(--main-black);
     /* background-color: gray; */
-    font-weight: 800;
 }
 
 main > .section2 > .article2 > .swiper2 {
@@ -288,82 +287,3 @@ main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .ite
 main > .section2 > .article2 > .swiper2 > .swiper-wrapper > .swiper-slide > .item2 > a{
     color: var(--main-black);
 }
-
-/* footer{
-    background-image: url("../img/main/footer.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    width: 100%;
-    height: 500px;
-    position: fixed;
-    bottom: 0;
-}
-
-footer > .footer_main > .footer_menu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 10%;
-    left: 10%;
-    line-height: 3;
-    color: white;
-    font-size: 20px;
-}
-
-footer > .footer_main > .footer_menu > p{
-    color: white;
-}
-
-
-footer > .footer_main > .footer_menu > a{
-    color: white;
-}
-
-footer > .footer_main > .footer_menu > a:hover{
-    color: gray;
-}
-
-
-footer > .footer_main > .footer_contact{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 10%;
-    left: 30%;
-    line-height: 3;
-    color: white;
-    font-size: 20px;
-}
-
-footer > .footer_main > .footer_contact > a{
-    color: white;
-}
-
-footer > .footer_main > .footer_contact > a:hover{
-    color: gray;
-}
-
-
-footer > .footer_line{
-    background-color: black;
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    line-height: 80px;
-}
-
-footer > div > a{
-    color: white;
-    font-size: 20px;
-}
-
-footer > .footer_line > a{
-    font-size: 15px;
-} */
-
-
-
-
-

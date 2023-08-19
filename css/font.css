@@ -12,13 +12,13 @@
 
 
 @font-face {
-    font-family: 'Noto Sans KR';
-    src: url("../font/Noto_Sans_KR/NotoSansKR-VariableFont_wght.ttf") format("truetype");
-    unicode-range: U+AC00-D7AF;
+    font-family: "Noto Sans KR";
+    src: url("../font/Noto_Sans_KR/static/NotoSansKR-Regular.ttf") format("truetype");
+    unicode-range: U+AC00-D7A3;
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: "Lato";
     src: url("../font/Lato/Lato-Regular.ttf") format("truetype");
     unicode-range: U+26;
 }
