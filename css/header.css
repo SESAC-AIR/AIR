@@ -24,6 +24,9 @@ header > .main-menu > .inner > .menu {
 header > .main-menu > .inner > .menu > li {
   margin-right: 30px;
 }
+header > .main-menu > .inner > .menu > li:last-child {
+  margin-right: 0;
+}
 
 header > .main-menu > .inner > .menu > li > a {
   color: var(--main-black);
