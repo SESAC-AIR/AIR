@@ -3,7 +3,7 @@ import * as THREE from "three";
 
 // 장면 추가
 const scene = new THREE.Scene();
-scene.add(new THREE.AxesHelper(5));
+// scene.add(new THREE.AxesHelper(5));
 
 // 카메라 추가
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -18,11 +18,12 @@ const renderer = new THREE.WebGLRenderer({
 });
 renderer.setSize(window.innerWidth, window.innerHeight);
 
+
 const container = document.querySelector(".threejs-container");
 container.appendChild(renderer.domElement);
 
 // 빛
-const light = new THREE.DirectionalLight(0xffffff, 1);
+const light = new THREE.AmbientLight(0xffffff, 1.7);
 light.position.set(1, 1, 1);
 scene.add(light);
 
@@ -31,9 +32,9 @@ const GLTFloader = new GLTFLoader();
 const GLTFObjGroup = new THREE.Object3D();
 
 // load a resource
-GLTFloader.load("../nike_jordan/scene.gltf", function(gltf){
+GLTFloader.load("../air_jordan_1_1985/scene.gltf", function(gltf){
   const GLTFObj = gltf.scene
-  GLTFObj.scale.set(1, 1, 1)
+  GLTFObj.scale.set(0.005, 0.005, 0.005)
   GLTFObj.position.set(0, -0.1, 0)
   GLTFObjGroup.add(GLTFObj)
   scene.add(GLTFObjGroup)
@@ -59,35 +60,114 @@ ScrollTrigger.defaults({
 let modelAni = gsap.timeline();
 
 modelAni.to(camera.position, {
-  duration: 2,
-  y: -0.2,
-  z: 0.8, 
+  duration: 1,
+  x: 0,
+  y: -0.6,
+  z: 4, 
 })
 
+// 기준점
 modelAni.to(GLTFObjGroup.rotation,{
-  x: 12.5,
-  y: 0.1,
-  z: -0.01 ,
+  x: 0,
+  y: 0,
+  z: 0,
+  scrollTrigger: {
+    trigger:"header",
+    start: "top bottom",
+    end: "top bottom",
+    scrub: 1,
+    // markers: true,
+},
+})
+
+modelAni.to(camera.position,{
+  x: 0,
+  y: -0.6,
+  z: 0.1, 
   scrollTrigger: {
     trigger: ".section1",
+    start: "top bottom",
+    end: "top bottom",
+    // markers: true,
+  }
+})
+
+
+// content1 
+modelAni.to(GLTFObjGroup.rotation,{
+  x: 22,
+  y: 3,
+  z: -3.4,
+  scrollTrigger: {
+    trigger:"header",
     start: "top top",
-    end: "bottom center",
-    markers: true
+    end: "bottom top",
+    scrub: 1,
+    // markers: true,
+}
+})
+
+modelAni.to(camera.position,{
+  x: 0,
+  y: -0.6,
+  z: 3, 
+  scrollTrigger: {
+    trigger: "header",
+    start: "top top",
+    end: "bottom top",
+    // markers: true,
   }
 })
 
-modelAni.to(camera.position, {
-  x: 0, 
-  y: 0.2,
-  z: -0.01,
+// content2
+modelAni.to(GLTFObjGroup.rotation,{
+  x: 15.7,
+  y: -0.8,
+  z: -3.4,
   scrollTrigger: {
     trigger: ".section1",
-    start: "top center",
-    end: "bottom bottom",
-    markers: true
+    start: "15% top",
+    end: "30% top",
+    // markers: true,
   }
 })
 
+modelAni.to(camera.position,{
+  x: -1,
+  y: -0.6,
+  z: 3,
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "15% top",
+    end: "30% top",
+    // markers: true,
+  }
+})
+
+// content3
+modelAni.to(GLTFObjGroup.rotation,{
+  x: 10.9,
+  y: 4,
+  z: -3.4,
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "40% top",
+    end: "50% top",
+    markers: true,
+  }
+})
+
+modelAni.to(camera.position,{
+  x: 1,
+  y: -0.2,
+  z: 3,
+  scrollTrigger: {
+    trigger: ".section1",
+    start: "40% top",
+    end: "50% top",
+    markers: true,
+  }
+})
 
 // 애니메이션 함수
 function animate(currentTime){
