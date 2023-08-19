@@ -17,7 +17,7 @@ body {
 #sendName h1 {
   color: white;
   font-weight: 400;
-  font-size: 1.8vw;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 #sendName div {
