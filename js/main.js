@@ -26,19 +26,19 @@ const swiper2 = new Swiper(".swiper2", {
 // });
 
 // 헤더 부분 배경 및 flow 삭제
-const header = document.querySelector("header");
-const mainMenu = header.querySelector(".main-menu");
-const flow = header.querySelector(".flow");
+// const header = document.querySelector("header");
+// const mainMenu = header.querySelector(".main-menu");
+// const flow = header.querySelector(".flow");
 
-document.addEventListener("scroll", () => {
-  if (scrollY > 150) {
-    header.style.backdropFilter = "blur(25px)";
-    flow.style.display = "none";
-  } else {
-    header.style.backdropFilter = "blur(25px)";
-    flow.style.display = "flex";
-  }
-});
+// document.addEventListener("scroll", () => {
+//   if (scrollY > 150) {
+//     header.style.backdropFilter = "blur(25px)";
+//     flow.style.display = "none";
+//   } else {
+//     header.style.backdropFilter = "blur(25px)";
+//     flow.style.display = "flex";
+//   }
+// });
 
 // search 모달창
 
