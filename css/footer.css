@@ -17,6 +17,15 @@ footer{
     bottom: 0;
 }
 
+footer > .footer_main > div:first-child > p:first-child,
+footer > .footer_main > div:nth-child(2) > p:first-child { 
+    font-weight: 700;
+    font-size: 23px;
+}
+
+
+
+
 footer > .footer_main > .footer_menu{
     position: absolute;
     display: flex;
@@ -68,11 +77,11 @@ footer > .footer_line{
     position: absolute;
     bottom: 0;
     text-align: center;
-    line-height: 80px;
+    line-height: 50px;
 }
 
 footer > div > p{
-    color: white;
+    color: gray;
     font-size: 20px;
 }
 
