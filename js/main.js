@@ -14,65 +14,6 @@ const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 40,
 });
 
-// const swiper3 = new Swiper(".swiper3", {
-//     // centeredSlides: false,
-//     loop: true,
-//     // slideToClickedSlide: true,
-//     slidesPerView: 7.5,
-//     spaceBetween: 220,
-//     autoplay: true,
-//     speed: 5000,
-//     // delay: 0,
-// });
-
-// 헤더 부분 배경 및 flow 삭제
-// const header = document.querySelector("header");
-// const mainMenu = header.querySelector(".main-menu");
-// const flow = header.querySelector(".flow");
-
-// document.addEventListener("scroll", () => {
-//   if (scrollY > 150) {
-//     header.style.backdropFilter = "blur(25px)";
-//     flow.style.display = "none";
-//   } else {
-//     header.style.backdropFilter = "blur(25px)";
-//     flow.style.display = "flex";
-//   }
-// });
-
-// // search 모달창
-
-// const modalSearch = document.querySelector(".modal-search");
-// const x = modalSearch.querySelector(".fa-xmark");
-// const search = modalSearch.querySelector(".search");
-// const field = search.querySelector(".field");
-// const inputSearch = field.querySelector("input[type='search']");
-// // console.log(inputSearch);
-// const hashtag = modalSearch.querySelector("p");
-// // const hashTag = field.querySelector(".hash-tag");
-// inputSearch.addEventListener("focus", function () {
-//   hashtag.style.display = "block";
-//   // console.log(this);
-// });
-
-// inputSearch.addEventListener("focusout", function () {
-//   hashtag.style.display = "none";
-//   // console.log(this);
-// });
-
-// const menu = document.querySelector(".menu");
-// const menuIcon = menu.querySelectorAll("li");
-// const menuSearch = menuIcon[3];
-// // console.log(menuSearch);
-
-// menuSearch.addEventListener("click", () => {
-//   modalSearch.classList.add("active");
-// });
-
-// x.addEventListener("click", () => {
-//   modalSearch.classList.remove("active");
-// });
-
 // 애니메이션 추가
 const shoes = document.querySelector(".threejs-container");
 shoes.style.transition = "1s";
@@ -163,11 +104,13 @@ gsap.from(".content3", {
   // y: 100,
 });
 
+const swiper = document.querySelector(".swiper1");
+const swiperWrapper = swiper.querySelector(".swiper-wrapper");
+const slides = swiperWrapper.querySelectorAll(".swiper-slide");
 
-$(".footer_menu").this(a).hover(
-  function () {
-    $(".footer_menu").this(a).css("color", "yellow");
-  },
-  function () {
-  $(".footer_link").children().css("color", "red");
-});
+// console.log(slides);
+
+// slides.addEventListener("click", () => {
+//   window.location.href = "./history.html"
+// });
+

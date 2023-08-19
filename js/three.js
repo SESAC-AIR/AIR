@@ -153,7 +153,7 @@ modelAni.to(GLTFObjGroup.rotation,{
     trigger: ".section1",
     start: "40% top",
     end: "50% top",
-    markers: true,
+    // markers: true,
   }
 })
 
@@ -165,7 +165,7 @@ modelAni.to(camera.position,{
     trigger: ".section1",
     start: "40% top",
     end: "50% top",
-    markers: true,
+    // markers: true,
   }
 })
 
