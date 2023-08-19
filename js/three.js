@@ -3,7 +3,7 @@ import * as THREE from "three";
 
 // 장면 추가
 const scene = new THREE.Scene();
-scene.add(new THREE.AxesHelper(5));
+// scene.add(new THREE.AxesHelper(5));
 
 // 카메라 추가
 const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);

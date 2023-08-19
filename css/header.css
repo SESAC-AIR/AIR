@@ -87,7 +87,7 @@ header > .flow > div > * {
   height: 300px;
   left: 0;
   position: fixed;
-  z-index: 5;
+  z-index: 20;
   display: flex;
   align-items: center;
   justify-content: center;
