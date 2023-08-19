@@ -1,4 +1,6 @@
 @import url("./root.css");
+@import url("./header.css");
+@import url("./footer.css");
 
 .hide {
   display: none;
@@ -128,23 +130,24 @@ main .colContainer.aj1 .colVisual .imgArea .imgWrap:nth-child(3) {
 /* colVisual - aj2 */
 main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(1) {
   flex-grow: 2;
-  height: 25vh;
+  height: 30vh;
   background-image: url("../img/collections/aj2-h-3.webp");
 }
 main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(2) {
   flex-grow: 3;
-  height: 35vh;
+  height: 40vh;
   background-image: url("../img/collections/aj2-h-2.webp");
 }
 main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(3) {
   flex-grow: 2;
-  height: 25vh;
+  height: 30vh;
   background-image: url("../img/collections/aj2-3.webp");
 }
 main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(4) {
   flex-grow: 3;
-  height: 35vh;
+  height: 40vh;
   background-image: url("../img/collections/aj2-1.webp");
+  margin-right: 0;
 }
 
 /* colVisual - info */
@@ -154,16 +157,11 @@ main .colContainer .colVisual .infoArea {
   align-items: flex-end;
   margin-top: 20px;
 }
-main .colContainer .colVisual .infoArea .slogan p {
+main .colContainer .colVisual .infoArea .slogan {
   font-size: 4.4vw;
   font-weight: bold;
 }
-main .colContainer .colVisual .infoArea .slogan p:last-child {
-  font-size: 4.2vw;
-  margin-top: -1.5vh;
-  margin-left: 25px;
-}
-main .colContainer .colVisual .infoArea .slogan p span {
+main .colContainer .colVisual .infoArea .slogan span {
   color: var(--main-white);
   text-shadow: -1px -1px 0 var(--main-black), 1px -1px 0 var(--main-black),
     -1px 1px 0 var(--main-black), 1px 1px 0 var(--main-black);
@@ -477,10 +475,10 @@ main
 @media (max-width: 576px) {
   /* indicator */
   main .colTit {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
-  main .colTit #colIndicator {
-    margin-top: 1rem;
+  main .colTit h2 {
+    margin-top: 2rem;
   }
 
   /* products grid */
