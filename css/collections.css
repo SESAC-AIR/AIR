@@ -1,12 +1,16 @@
 @import url("./root.css");
 
+.hide {
+  display: none;
+}
+
 main {
   margin-top: 50px;
 }
 main h2.mainTitle {
   text-align: center;
-  font-size: 2.4vw;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 /* collection INDICATOR */
@@ -91,20 +95,8 @@ main .colContainer .colVisual .imgArea .imgWrap {
   background-repeat: no-repeat;
   background-position: center center;
 }
-main .colContainer .colVisual .imgArea .imgWrap:nth-child(1) {
-  flex-grow: 1;
-  height: 20vh;
-  background-image: url("../img/collections/aj00.jpeg");
-}
-main .colContainer .colVisual .imgArea .imgWrap.slider {
-  flex-grow: 3;
-  height: 40vh;
-  background-image: url("../img/collections/aj1.webp");
-}
-main .colContainer .colVisual .imgArea .imgWrap:nth-child(3) {
-  flex-grow: 2;
-  height: 30vh;
-  background-image: url("../img/collections/aj0.webp");
+
+main .colContainer.aj1 .colVisual .imgArea .imgWrap:last-child {
   margin-right: 0;
 }
 
@@ -116,10 +108,51 @@ main .colContainer .colVisual .imgArea .imgWrap img {
   transform: translate(-50%, -50%);
 }
 
+/* colVisual - aj1 */
+main .colContainer.aj1 .colVisual .imgArea .imgWrap:nth-child(1) {
+  flex-grow: 1;
+  height: 20vh;
+  background-image: url("../img/collections/aj00.jpeg");
+}
+main .colContainer.aj1 .colVisual .imgArea .imgWrap:nth-child(2) {
+  flex-grow: 3;
+  height: 40vh;
+  background-image: url("../img/collections/aj1.webp");
+}
+main .colContainer.aj1 .colVisual .imgArea .imgWrap:nth-child(3) {
+  flex-grow: 2;
+  height: 30vh;
+  background-image: url("../img/collections/aj0.webp");
+}
+
+/* colVisual - aj2 */
+main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(1) {
+  flex-grow: 2;
+  height: 25vh;
+  background-image: url("../img/collections/aj2-h-3.webp");
+}
+main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(2) {
+  flex-grow: 3;
+  height: 35vh;
+  background-image: url("../img/collections/aj2-h-2.webp");
+}
+main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(3) {
+  flex-grow: 2;
+  height: 25vh;
+  background-image: url("../img/collections/aj2-3.webp");
+}
+main .colContainer.aj2 .colVisual .imgArea .imgWrap:nth-child(4) {
+  flex-grow: 3;
+  height: 35vh;
+  background-image: url("../img/collections/aj2-1.webp");
+}
+
+/* colVisual - info */
 main .colContainer .colVisual .infoArea {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: 20px;
 }
 main .colContainer .colVisual .infoArea .slogan p {
   font-size: 4.4vw;
@@ -187,9 +220,6 @@ main .colProducts .grid-container {
   padding-bottom: 7rem;
 }
 /* grid-item */
-main .colProducts .grid-container .shoe-box.hide {
-  display: none;
-}
 main .colProducts .grid-container .shoe-box .img-box {
   width: 100%;
   position: relative;
