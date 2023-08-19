@@ -1,19 +1,21 @@
-@import url("./reset.css");
-@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Audiowide&display=swap");
+@import url("../css/reset.css");
+@import url("../css/root.css");
+
 body {
-  background-color: #f7f4ec;
+  background-color: var(--main-ivory);
 }
 
 header {
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  padding: 30px 30px;
+  overflow-x: hidden;
   width: 100%;
 }
 
+header > .main-menu {
+  height: 100px;
+}
+
 header > .main-menu > .inner {
-  position: relative;
+  padding: 30px 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,15 +32,47 @@ header > .main-menu > .inner > .menu > li {
 }
 
 header > .main-menu > .inner > .menu > li > a {
-  color: black;
+  color: var(--main-black);
 }
 
 header > .main-menu > .inner > .menu > li > i {
-  color: black;
+  color: var(--main-black);
+}
+
+header > .flow {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 0;
+  white-space: nowrap;
+}
+
+header > .flow > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: loop 5s linear infinite;
+  line-height: 2;
+  margin-right: 8px;
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+header > .flow > div > * {
+  margin-right: 5px;
 }
 main {
   position: relative;
-  top: 120px;
+  top: 40px;
 }
 main > .grid-container {
   display: grid;
@@ -54,13 +88,14 @@ main .grid-container article {
   width: 100%;
   height: 100%;
 }
+
 /* wish-list logo */
 main .grid-container .wish-list {
   font-family: "Abril Fatface", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10vw;
+  font-size: 9vw;
   color: var(--main-red);
 }
 
@@ -216,7 +251,7 @@ main
 main .modal-details {
   background-color: #fff;
   width: 600px;
-  height: 450px;
+  height: 465px;
   /* height: 400px; */
   position: fixed;
   border-radius: 30px;
@@ -252,8 +287,19 @@ main .modal-details .modal-left .swiper {
   border: 1px solid #cdcdcd;
   background-color: #f5f5f5;
 }
-main .modal-details .modal-left .swiper img {
+
+main .modal-details .modal-left .swiper .swiper-wrapper {
   width: 100%;
+}
+main .modal-details .modal-left .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+main .modal-details .modal-left .swiper img {
+  width: 90%;
+  /* align-items: center; */
+  /* display: flex; */
+  text-align: center;
 }
 main .modal-details .modal-left .goto-kream {
   float: right;
@@ -267,11 +313,11 @@ main .modal-details .modal-left .goto-kream {
   display: flex;
   align-items: center;
   display: flex;
-  width: 80px;
+  width: 9cap;
   margin: 1rem 0;
 }
 main .modal-details .modal-left .goto-kream img {
-  width: 60px;
+  width: 70px;
 }
 main .modal-details .modal-left .goto-kream i {
   color: black;
@@ -282,27 +328,29 @@ main .modal-right {
   padding: 2.5rem 1rem;
 }
 main .modal-right .jordan {
-  font-size: 20px;
+  font-size: 25px;
   text-decoration: underline;
   font-family: "Audiowide", cursive;
+  margin-top: 1.1rem;
 }
 main .modal-right .product-name {
   display: flex;
   flex-direction: column;
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
 }
 main .modal-right .product-name .product-en {
-  font-size: 16px;
+  font-size: 18px;
 }
 main .modal-right .product-name .product-ko {
-  font-size: 14px;
+  font-size: 16px;
   color: #868686;
 }
 main .modal-right .price {
   font-family: "Audiowide", sans-serif;
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  font-size: 17px;
 }
 main .modal-right .info-box {
   margin-top: 2rem;
@@ -310,7 +358,8 @@ main .modal-right .info-box {
 
 main .modal-right .info-box .info {
   font-family: "Audiowide", sans-serif;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.4rem;
+  font-size: 17px;
 }
 
 main .modal-right .info-box .row {
@@ -324,7 +373,13 @@ main .modal-right .info-box .row span {
   width: 40%;
   /* border: 1px solid black; */
   text-align: center;
-  margin: 0.2rem 0;
+  margin: 0.4rem 0;
+}
+
+/* color title 선택 */
+main .modal-right .info-box .row .color-title {
+  position: relative;
+  top: 7.5px;
 }
 
 /* x */
