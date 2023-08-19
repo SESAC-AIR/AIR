@@ -16,15 +16,14 @@ addEventListener("resize", () => {
   thisPage = Number(list.querySelector("li.clicked").innerText);
   listWidth = listContainer.offsetWidth;
   listView = listWidth / 40;
+  // if (thisPage % listView === 0) {
+  //   list.style.transform = `translate(${
+  //     -listWidth * parseInt(thisPage - 1 / listView)
+  //   }px)`;
+  // }
   list.style.transform = `translate(${
-    -listWidth * parseInt(thisPage / listView)
+    -listWidth * parseInt((thisPage - 1) / listView)
   }px)`;
-  console.log(
-    thisPage,
-    listWidth,
-    listView,
-    -listWidth * parseInt(thisPage / listView)
-  );
 });
 
 lis.forEach((li) => {
