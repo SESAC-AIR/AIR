@@ -162,3 +162,12 @@ gsap.from(".content3", {
   x: -400,
   // y: 100,
 });
+
+
+$(".footer_menu").this(a).hover(
+  function () {
+    $(".footer_menu").this(a).css("color", "yellow");
+  },
+  function () {
+  $(".footer_link").children().css("color", "red");
+});
