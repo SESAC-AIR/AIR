@@ -22,44 +22,44 @@ main .colTit #colIndicator {
   height: 40px;
 }
 main .colTit #colIndicator button {
-  width: 40px;
-  height: 100%;
+  /* width: 40px; */
+  /* height: 100%; */
   line-height: 40px;
-  border: 1px solid var(--main-black);
-  border-radius: var(--item-radius);
+  background-color: transparent;
+  border: none;
+  margin: 0 1em;
+  /* border: 1px solid var(--main-black);
+  border-radius: var(--item-radius); */
 }
 main .colTit #colIndicator .list-container {
+  width: 400px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: var(--item-radius);
+  overflow: hidden;
 }
 main .colTit #colIndicator .list-container ul {
+  width: 800px;
   display: flex;
-  background-color: #fff;
 }
 main .colTit #colIndicator .list-container ul li {
   width: 40px;
   line-height: 40px;
   text-align: center;
+  border-right: 1px solid var(--main-white);
+  cursor: pointer;
+}
+main .colTit #colIndicator .list-container ul li.clicked {
+  background-color: var(--main-black);
 }
 main .colTit #colIndicator .list-container ul li a {
+  font-size: 1rem;
 }
-/* main #colIndicator ul li a {
-  font-size: 1.8vw;
+
+main .colTit #colIndicator .list-container ul li.clicked a {
+  color: #fff;
+  font-weight: bold;
 }
-main #colIndicator ul li:hover a,
-main #colIndicator ul li:first-child a {
-  color: #f1f2ec;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-}
-main #colIndicator > button {
-  border: 1px solid var(--main-black);
-  padding: 0.5em 1em;
-  border-radius: var(--item-radius);
-  font-size: 1.6vw;
-  margin-right: 5rem;
-}
-main #colIndicator > button > img {
-  margin-left: 10px;
-} */
 
 /* COLLECTION */
 main .colContainer {
@@ -365,9 +365,12 @@ main
 
 /* 576 768 992 */
 @media (max-width: 992px) {
-  main .colProducts .grid-container {
-    grid-template-columns: 1fr 1fr 1fr;
+  /* indicator */
+  main .colTit #colIndicator .list-container {
+    width: 200px;
   }
+
+  /* visual */
   main .colContainer .colVisual .imgArea {
     width: 100%;
   }
@@ -380,41 +383,21 @@ main
   main .colProducts .grid-container .shoe-box .text-box .original-price {
     font-size: 1.6vw;
   }
+
+  /* products grid */
+  main .colProducts .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 768px) {
   main h2.mainTitle {
     font-size: 32px;
   }
-  main .colProducts .grid-container {
-    grid-template-columns: 1fr 1fr;
-  }
-  main #colIndicator > span {
-    padding-right: 12px;
-  }
-  main #colIndicator ul {
-    margin: 0 12px;
-  }
-  main #colIndicator ul li {
-    width: 30px;
-  }
-
-  main #colIndicator > span,
-  main #colIndicator ul li a {
-    font-size: 16px;
-  }
-  main #colIndicator > button {
-    margin-right: 0;
-    min-width: 80px;
-  }
-  main #colIndicator > button span {
-    font-size: 14px;
-  }
-  main #colIndicator > button span img {
-    display: inline-block;
-  }
   main .colContainer h2 {
     font-size: 16px;
   }
+
+  /* grid */
   main .colContainer .colVisual .imgArea .imgWrap {
     display: none;
   }
@@ -448,6 +431,12 @@ main
   main .colContainer .colVisual .infoArea .infoBox .infoLine dd {
     font-size: 12px;
   }
+
+  /* products grid */
+  main .colProducts .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
   main .colProducts .grid-container .shoe-box .text-box .shoe-tit,
   main .colProducts .grid-container .shoe-box .text-box .sale-price {
     font-size: 16px;
@@ -458,10 +447,16 @@ main
   }
 }
 @media (max-width: 576px) {
+  /* indicator */
+  main .colTit {
+    flex-direction: column;
+  }
+  main .colTit #colIndicator {
+    margin-top: 1rem;
+  }
+
+  /* products grid */
   main .colProducts .grid-container {
     grid-template-columns: 1fr;
-  }
-  main #colIndicator {
-    width: 100%;
   }
 }
