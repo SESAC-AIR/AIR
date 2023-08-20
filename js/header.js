@@ -45,3 +45,11 @@ menuSearch.addEventListener("click", () => {
 x.addEventListener("click", () => {
   modalSearch.classList.remove("active");
 });
+
+// mobile menu
+const mobileMenu = document.querySelector(".mobile-menu-drop");
+const menuBtn = document.querySelector(".menuBtn");
+
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("hide");
+});
