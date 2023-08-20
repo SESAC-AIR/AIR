@@ -16,11 +16,7 @@ addEventListener("resize", () => {
   thisPage = Number(list.querySelector("li.clicked").innerText);
   listWidth = listContainer.offsetWidth;
   listView = listWidth / 40;
-  // if (thisPage % listView === 0) {
-  //   list.style.transform = `translate(${
-  //     -listWidth * parseInt(thisPage - 1 / listView)
-  //   }px)`;
-  // }
+
   list.style.transform = `translate(${
     -listWidth * parseInt((thisPage - 1) / listView)
   }px)`;
@@ -76,7 +72,7 @@ function colVisual() {
   );
   let i = 1;
   setInterval(function () {
-    visualImg.style.backgroundImage = `url("../img/collections/aj${++i}.webp")`;
+    visualImg.style.backgroundImage = `url("../img/collections/aj1-${i++}.webp")`;
     if (i > 4) i = 1;
   }, 1000);
 }

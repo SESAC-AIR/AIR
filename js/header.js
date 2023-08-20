@@ -3,14 +3,15 @@ const storedName = localStorage.getItem("name");
 const nameArea = document.querySelector("#wishlist a span");
 const span = document.createElement("span");
 let userName = storedName;
-if (storedName.length > 8) {
-  userName = storedName.slice(0, 8) + "...";
+if (storedName) {
+  if (storedName.length > 8) {
+    userName = storedName.slice(0, 8) + "...";
+  }
+  span.append(userName);
+  span.style.fontWeight = "bold";
+  span.style.marginRight = "0";
+  nameArea.prepend(span, "님의 ");
 }
-span.append(userName);
-span.style.fontWeight = "bold";
-span.style.marginRight = "0";
-nameArea.prepend(span, "님의 ");
-
 
 // search 모달창
 
@@ -43,4 +44,12 @@ menuSearch.addEventListener("click", () => {
 
 x.addEventListener("click", () => {
   modalSearch.classList.remove("active");
+});
+
+// mobile menu
+const mobileMenu = document.querySelector(".mobile-menu-drop");
+const menuBtn = document.querySelector(".menuBtn");
+
+menuBtn.addEventListener("click", function () {
+  mobileMenu.classList.toggle("hide");
 });
