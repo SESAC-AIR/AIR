@@ -78,19 +78,16 @@ class Particle {
   constructor(x, y, radius, color) {
     this.x = x;
     this.y = y;
-    this.path = new Path2D(logos[Math.round(Math.random() * 1)]);
+    this.radius = radius;
+    this.color = color;
+
+    this.path = new Path2D(logos[randomIntFromRange(0, 1)]);
     this.velocity = {
       x: Math.random() - 0.5,
       y: Math.random() + 2.5,
     };
-    this.radius = radius;
-    this.color = color;
-
-    this.mass = 1;
     this.angle = Math.random() * 360;
     this.spin = Math.random() < 0.5 ? -1 : 1;
-    this.step = 0;
-    this.speed = 0.01;
   }
   draw(context) {
     context.save();
@@ -145,9 +142,9 @@ function animate() {
   // clear canvas
   context.clearRect(0, 0, canvas.width, canvas.height);
   // draw
-  particles.forEach((e) => {
-    e.draw(context);
-    e.update();
+  particles.forEach((particle) => {
+    particle.draw(context);
+    particle.update();
   });
 }
 animate();
