@@ -1,18 +1,70 @@
+
+// 역사 슬라이드 
 const swiper1 = new Swiper(".swiper1", {
   // centeredSlides: false,
-  loop: true,
-  slideToClickedSlide: true,
+  loop: false,
+  slideToClickedSlide: false,
   slidesPerView: 3,
   spaceBetween: 10,
+  navigator: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
 });
 
-const swiper2 = new Swiper(".swiper2", {
-  // centeredSlides: false,
-  loop: true,
-  slideToClickedSlide: true,
-  slidesPerView: 4,
-  spaceBetween: 40,
-});
+// 신발 슬라이드
+var slides = document.querySelector(".slides"),
+    slide = document.querySelectorAll(".slides li"),
+    currentIdx = 0,
+    slideCount = slide.length,
+    prevBtn = document.querySelector(".prev"),
+    slideWidth = 300,
+    slideMargin = 30,
+    nextBtn = document.querySelector(".next");
+
+    slides.style.width =(slideWidth + slideMargin) * slideCount - slideMargin + "px";
+
+    function moveSlide(num){
+      slides.style.left = -num * 330 + "px";
+      currentIdx = num;
+    }
+    nextBtn.addEventListener("click", () => {
+      if(currentIdx < slideCount - 4.5){
+        moveSlide(currentIdx + 1);
+      }
+      else{
+        moveSlide(0);
+      }
+    });
+
+    prevBtn.addEventListener("click", () => {
+      if(currentIdx > 0){
+        moveSlide(currentIdx - 1);
+      }
+      else{
+        moveSlide(slideCount - 4.5);
+      }
+    });
+
+
+//신발 슬라이드 호버 효과
+const shoesSlide = document.querySelector(".slides");
+const shoesSlides = shoesSlide.querySelectorAll("li");
+const hoverBox = shoesSlide.querySelectorAll(".shoes-hover");
+
+// console.log(shoesSlides);
+// console.log(hoverBox);
+
+for(let i = 0; i < 10; i++) {
+  shoesSlides[i].addEventListener("mouseenter", () => {
+    hoverBox[i].style.display = "flex";
+  });
+
+  shoesSlides[i].addEventListener("mouseleave", () => {
+    hoverBox[i].style.display = "none";
+  });
+}
+
 
 // 애니메이션 추가
 const shoes = document.querySelector(".threejs-container");
@@ -103,14 +155,4 @@ gsap.from(".content3", {
   x: -400,
   // y: 100,
 });
-
-const swiper = document.querySelector(".swiper1");
-const swiperWrapper = swiper.querySelector(".swiper-wrapper");
-const slides = swiperWrapper.querySelectorAll(".swiper-slide");
-
-// console.log(slides);
-
-// slides.addEventListener("click", () => {
-//   window.location.href = "./history.html"
-// });
 
