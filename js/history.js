@@ -1,3 +1,4 @@
+// 슬라이더
 let curPos = 0;
 let postion = 0;
 const IMAGE_WIDTH = 640;
@@ -36,6 +37,9 @@ function init() {
 
 init();
 
+// ------------------------------------------
+// 클래스가 move인 a 태그를 눌렀을때 발생되게 하는 이벤트
+
 $(document).ready(function ($) {
   $("move").click(function (event) {
     event.preventDefault();
@@ -43,8 +47,6 @@ $(document).ready(function ($) {
     $("html,body").animate({ scrollTop: $(this.hash).offset().top }, 500);
   });
 });
-
-// 클래스가 move인 a 태그를 눌렀을때 발생되게 하는 이벤트
 
 // $(this.hash) a태그에 있는 해쉬 값으로 스크롤링 되며 이동
 
