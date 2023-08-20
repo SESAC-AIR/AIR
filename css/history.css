@@ -142,16 +142,16 @@ button:disabled {
 
 .prev {
   /* float: left; */
-  position: absolute;
+  /* position: absolute;
   top: 450px;
-  left: -30px;
+  left: -30px; */
 }
 
 .next {
   /* float: right; */
-  position: absolute;
+  /* position: absolute;
   top: 450px;
-  left: 640px;
+  left: 640px; */
 }
 
 .section > img {
