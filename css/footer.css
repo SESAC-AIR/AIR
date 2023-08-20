@@ -16,20 +16,20 @@ footer {
 }
 
 footer > .footer_main > div:first-child > p:first-child,
-footer > .footer_main > div:nth-child(2) > p:first-child { 
-    font-weight: 700;
-    font-size: 23px;
+footer > .footer_main > div:nth-child(2) > p:first-child {
+  font-weight: 700;
+  font-size: 23px;
 }
 
-footer > .footer_main > .footer_menu{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    top: 10%;
-    left: 5%;
-    line-height: 3;
-    color: white;
-    font-size: 20px;
+footer > .footer_main > .footer_menu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 10%;
+  left: 5%;
+  line-height: 3;
+  color: white;
+  font-size: 20px;
 }
 
 footer > .footer_main > .footer_menu > p {
@@ -63,21 +63,27 @@ footer > .footer_main > .footer_contact > a:hover {
   color: gray;
 }
 
-footer > .footer_line{
-    background-color: black;
-    width: 100%;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    line-height: 50px;
+footer > .footer_line {
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 50px;
 }
 
-footer > div > p{
-    color: gray;
-    font-size: 20px;
+footer > div > p {
+  color: gray;
+  font-size: 20px;
 }
 
 footer > .footer_line > p {
   font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  footer > .footer_main > .footer_contact {
+    left: 40%;
+  }
 }
