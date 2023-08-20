@@ -2,7 +2,7 @@
 const imgBox = document.querySelectorAll(".img-box");
 const hoverWrap = document.querySelectorAll(".hover-wrap");
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 4; i++) {
   imgBox[i].addEventListener("mouseenter", function () {
     hoverWrap[i].classList.add("show");
   });
@@ -11,3 +11,14 @@ for (let i = 0; i < 5; i++) {
     hoverWrap[i].classList.remove("show");
   });
 }
+
+// heart 누르기
+const heartCircles = document.querySelectorAll(".heart-circle");
+
+heartCircles.forEach((heartCircle) => {
+  heartCircle.addEventListener("click", function () {
+    let heart = this.querySelector("i");
+    heart.classList.toggle("fa-regular");
+    heart.classList.toggle("fa-solid");
+  });
+});
