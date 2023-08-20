@@ -6,7 +6,7 @@ const swiper1 = new Swiper(".swiper1", {
   slideToClickedSlide: false,
   slidesPerView: 3,
   spaceBetween: 10,
-  navigator: {
+  navigation: {
     prevEl: ".swiper-button-prev",
     nextEl: ".swiper-button-next",
   },
@@ -66,7 +66,7 @@ for(let i = 0; i < 10; i++) {
 }
 
 
-// 애니메이션 추가
+// section1 신발 3D 애니메이션 보여주는 것 제한 두기
 const shoes = document.querySelector(".threejs-container");
 shoes.style.transition = "1s";
 
@@ -80,7 +80,7 @@ document.addEventListener("scroll", () => {
 }
 });
 
-// section1 애니메이션
+// section1  2D 애니메이션
 
 // 마이클 조던
 gsap.to(".img1", {
