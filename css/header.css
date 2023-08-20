@@ -52,6 +52,10 @@ header > .main-menu > .inner > .menu > li#wishlist a i {
   font-size: 14px;
 }
 
+header > .main-menu > .inner > .menu > li > a:hover{
+  color: var(--main-red);
+}
+
 header > .flow {
   background-color: white;
   display: flex;
