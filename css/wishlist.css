@@ -1,6 +1,8 @@
 @import url("../css/reset.css");
 @import url("../css/root.css");
 @import url("../css/header.css");
+/* @import url("../css/font.css"); */
+@import url("../css/footer.css");
 
 body {
   background-color: var(--main-ivory);
@@ -92,12 +94,13 @@ main .grid-container article {
 
 /* wish-list logo */
 main .grid-container .wish-list {
-  font-family: "Abril Fatface", cursive;
+  font-family: "Alfa Slab One", cursive;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 9vw;
+  font-size: 7vw;
   color: var(--main-red);
+  -webkit-text-stroke: 2px black;
 }
 
 /* shoe-box */

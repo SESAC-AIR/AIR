@@ -171,7 +171,7 @@ $(document).ready(function ($) {
 // ------------------------------------------
 // 스크롤 위치에 따라 연도메뉴바 사라지는 기능
 
-const menu = document.querySelector(".menu-by-years");
+const menu2 = document.querySelector(".menu-by-years");
 const line = document.querySelector(".line2");
 
 window.addEventListener("scroll", function () {
@@ -179,10 +179,10 @@ window.addEventListener("scroll", function () {
     window.innerHeight + window.scrollY >= document.body.offsetHeight;
 
   if (isScrollAtBottom) {
-    menu.style.display = "none";
+    menu2.style.display = "none";
     line.style.display = "none";
   } else {
-    menu.style.display = "flex";
+    menu2.style.display = "flex";
     line.style.display = "flex";
   }
 });
