@@ -21,6 +21,10 @@ header > .flow > div > * {
   margin-right: 5px;
 } */
 
+/* body {
+  cursor: url("../img/cursor.png"), auto;
+} */
+
 .header-line {
   display: flex;
   position: relative;
@@ -38,6 +42,7 @@ header {
   gap: 20px;
   margin-left: 50px;
   /* width: 10%; */
+  z-index: 30;
 }
 
 .line {
@@ -104,8 +109,10 @@ header {
 }
 
 main {
-  margin-left: 250px;
-  margin-right: 50px;
+  /* margin-left: 250px;
+  margin-right: 50px; */
+  padding: 0 250px;
+  z-index: 20;
 }
 
 .container {
@@ -187,9 +194,11 @@ button:disabled {
 
 .prev {
   float: left;
-  /* position: absolute;
-  top: 450px;
-  left: -30px; */
+  /* position: absolute; */
+  /* top: 400px; */
+  /* left: -30px; */
+  background-color: transparent;
+  font-size: 45px;
 }
 
 .next {
@@ -197,6 +206,8 @@ button:disabled {
   /* position: absolute;
   top: 450px;
   left: 640px; */
+  background-color: transparent;
+  font-size: 45px;
 }
 
 .section > img {

@@ -1,10 +1,10 @@
 // 슬라이더 1
-let curPos = 0;
-let postion = 0;
-const IMAGE_WIDTH = 640;
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const images = document.querySelector(".images");
+let curPos = 0; // 현재 이미지 위치
+let postion = 0; // 이미지의 변환된 위치
+const IMAGE_WIDTH = 640; // 이미지의 너비를 정의하는 상수
+const prevBtn = document.querySelector(".prev"); // 이전 버튼
+const nextBtn = document.querySelector(".next"); // 다음 버튼
+const images = document.querySelector(".images"); // 이미지를 포함하는 컨테이너
 
 function prev() {
   if (curPos > 0) {
@@ -30,7 +30,7 @@ function next() {
 }
 
 function init() {
-  prevBtn.setAttribute("disabled", "true");
+  prevBtn.setAttribute("disabled", "true"); // 이미지 슬라이더 초기화 // 이전 버튼을 첫 화면에선 비활성화
   prevBtn.addEventListener("click", prev);
   nextBtn.addEventListener("click", next);
 }
@@ -167,3 +167,22 @@ $(document).ready(function ($) {
 
 // $(this.hash) a태그에 있는 해쉬 값으로 스크롤링 되며 이동
 // 500 은 스크롤 속도
+
+// ------------------------------------------
+// 스크롤 위치에 따라 연도메뉴바 사라지는 기능
+
+const menu = document.querySelector(".menu-by-years");
+const line = document.querySelector(".line2");
+
+window.addEventListener("scroll", function () {
+  var isScrollAtBottom =
+    window.innerHeight + window.scrollY >= document.body.offsetHeight;
+
+  if (isScrollAtBottom) {
+    menu.style.display = "none";
+    line.style.display = "none";
+  } else {
+    menu.style.display = "flex";
+    line.style.display = "flex";
+  }
+});
