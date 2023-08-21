@@ -12,6 +12,7 @@ const swiper1 = new Swiper(".swiper1", {
   },
 });
 
+
 // 신발 슬라이드
 var slides = document.querySelector(".slides"),
     slide = document.querySelectorAll(".slides li"),
@@ -27,6 +28,8 @@ var slides = document.querySelector(".slides"),
     function moveSlide(num){
       slides.style.left = -num * 330 + "px";
       currentIdx = num;
+      console.log(currentIdx);
+      console.log(slideCount);
     }
     nextBtn.addEventListener("click", () => {
       if(currentIdx < slideCount - 4.5){
@@ -122,20 +125,20 @@ gsap.to(".section1-title", {
 
 gsap.from(".content1", {
   scrollTrigger: {
-    trigger: ".section1",
-    start: "0% top",
-    end: "10% top",
-    scrub: 1,
+    trigger: "header",
+    start: "top top",
+    end: "bottom top",
+    // scrub: 1,
     // markers: true,
   },
   opacity: 0,
-  y: -100,
+  x: -400,
 });
 
 gsap.from(".content2", {
   scrollTrigger: {
     trigger: ".section1",
-    start: "30% top",
+    start: "10% top",
     end: "40% top",
     scrub: 1,
   },

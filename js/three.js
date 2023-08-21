@@ -95,7 +95,7 @@ modelAni.to(camera.position,{
 
 // content1 
 modelAni.to(GLTFObjGroup.rotation,{
-  x: 22,
+  x: 10,
   y: 3,
   z: -3.4,
   scrollTrigger: {
@@ -108,7 +108,7 @@ modelAni.to(GLTFObjGroup.rotation,{
 })
 
 modelAni.to(camera.position,{
-  x: 0,
+  x: 0.8,
   y: -0.6,
   z: 3, 
   scrollTrigger: {
@@ -121,13 +121,13 @@ modelAni.to(camera.position,{
 
 // content2
 modelAni.to(GLTFObjGroup.rotation,{
-  x: 15.7,
+  x: 5,
   y: -0.8,
   z: -3.4,
   scrollTrigger: {
     trigger: ".section1",
-    start: "15% top",
-    end: "30% top",
+    start: "10% top",
+    end: "40% top",
     // markers: true,
   }
 })
@@ -138,33 +138,33 @@ modelAni.to(camera.position,{
   z: 3,
   scrollTrigger: {
     trigger: ".section1",
-    start: "15% top",
-    end: "30% top",
+    start: "10% top",
+    end: "40% top",
     // markers: true,
   }
 })
 
 // content3
 modelAni.to(GLTFObjGroup.rotation,{
-  x: 10.9,
-  y: 4,
+  x: -16,
+  y: 3.1,
   z: -3.4,
   scrollTrigger: {
     trigger: ".section1",
-    start: "40% top",
-    end: "50% top",
+    start: "50% top",
+    end: "60% top",
     // markers: true,
   }
 })
 
 modelAni.to(camera.position,{
-  x: 1,
+  x: 1.2,
   y: -0.2,
   z: 3,
   scrollTrigger: {
     trigger: ".section1",
-    start: "40% top",
-    end: "50% top",
+    start: "50% top",
+    end: "60% top",
     // markers: true,
   }
 })
